@@ -1,7 +1,7 @@
 module.exports =
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
-/******/ 	var installedModules = require('../../../../ssr-module-cache.js');
+/******/ 	var installedModules = require('../../../ssr-module-cache.js');
 /******/
 /******/ 	// The require function
 /******/ 	function __webpack_require__(moduleId) {
@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -295,6 +295,17 @@ class Sidebar extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
 /***/ (function(module, exports) {
 
 
+
+/***/ }),
+
+/***/ "./data/categories.json":
+/*!******************************!*\
+  !*** ./data/categories.json ***!
+  \******************************/
+/*! exports provided: 0, default */
+/***/ (function(module) {
+
+module.exports = JSON.parse("[{\"id\":\"1\",\"category\":\"Fruits\",\"items\":[{\"title\":\"Fresh Banana\",\"photo\":\"fruits.jpeg\",\"price\":\"15\"},{\"title\":\"Fresh Avocado\",\"photo\":\"fruits.jpeg\",\"price\":\"17\"},{\"title\":\"Pineapple\",\"photo\":\"fruits.jpeg\",\"price\":\"20\"}]}]");
 
 /***/ }),
 
@@ -962,122 +973,127 @@ module.exports = __webpack_require__(/*! ./dist/client/link */ "./node_modules/n
 
 /***/ }),
 
-/***/ "./pages/p/[id].js":
+/***/ "./pages/index.css":
 /*!*************************!*\
-  !*** ./pages/p/[id].js ***!
+  !*** ./pages/index.css ***!
   \*************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+
+/***/ "./pages/index.js":
+/*!************************!*\
+  !*** ./pages/index.js ***!
+  \************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return categoryItem; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return index; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/router */ "next/router");
-/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components/Layout */ "./components/Layout.js");
-var _jsxFileName = "/Users/olainjohn/Desktop/POS/nextPOS/pages/p/[id].js";
+/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./index.css */ "./pages/index.css");
+/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_index_css__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _data_categories__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../data/categories */ "./data/categories.json");
+var _data_categories__WEBPACK_IMPORTED_MODULE_4___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../data/categories */ "./data/categories.json", 1);
+var _jsxFileName = "/Users/olainjohn/Desktop/POS/nextPOS/pages/index.js";
+
+// import React, { Component } from "react";
 
 
 
 
-function categoryItem() {
-  const router = Object(next_router__WEBPACK_IMPORTED_MODULE_1__["useRouter"])();
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Layout__WEBPACK_IMPORTED_MODULE_3__["default"], {
+
+function convertToSlug(Text) {
+  return Text.toLowerCase().replace(/ /g, "-").replace(/[^\w-]+/g, "");
+}
+
+const CategoryLink = props => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+  href: `/category/${convertToSlug(props.slug)}`,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 14
+  },
+  __self: undefined
+}, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+  className: "category-link",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 15
+  },
+  __self: undefined
+}));
+
+function index() {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Layout__WEBPACK_IMPORTED_MODULE_1__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 21
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
     className: "text-center py-3",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 22
     },
     __self: this
-  }, router.query.slug), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, "Categories"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "categories container",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 11
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "category item",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 12
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    href: "",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 13
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    className: "btn btn-default minus",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 14
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: "/static/img/minus.png",
-    alt: "MinusIcon",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 15
-    },
-    __self: this
-  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    href: "",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 18
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    className: "btn btn-default plus",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 19
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: "/static/img/plus.png",
-    alt: "PlusIcon",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 20
-    },
-    __self: this
-  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: "/static/img/fruits.jpeg",
-    alt: "product image",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 23
     },
     __self: this
-  }))));
+  }, _data_categories__WEBPACK_IMPORTED_MODULE_4__.map(item => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "category",
+    key: item.id,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 25
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(CategoryLink, {
+    slug: item.category,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 26
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "total-item-per-cat",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 27
+    },
+    __self: this
+  }, item.items.length), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "category-name",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 28
+    },
+    __self: this
+  }, item.category)))));
 }
 
 /***/ }),
 
-/***/ 3:
-/*!*******************************!*\
-  !*** multi ./pages/p/[id].js ***!
-  \*******************************/
+/***/ 4:
+/*!******************************!*\
+  !*** multi ./pages/index.js ***!
+  \******************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/olainjohn/Desktop/POS/nextPOS/pages/p/[id].js */"./pages/p/[id].js");
+module.exports = __webpack_require__(/*! /Users/olainjohn/Desktop/POS/nextPOS/pages/index.js */"./pages/index.js");
 
 
 /***/ }),
@@ -1181,17 +1197,6 @@ module.exports = require("next/head");
 
 /***/ }),
 
-/***/ "next/router":
-/*!******************************!*\
-  !*** external "next/router" ***!
-  \******************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("next/router");
-
-/***/ }),
-
 /***/ "prop-types":
 /*!*****************************!*\
   !*** external "prop-types" ***!
@@ -1237,4 +1242,4 @@ module.exports = require("url");
 /***/ })
 
 /******/ });
-//# sourceMappingURL=[id].js.map
+//# sourceMappingURL=index.js.map

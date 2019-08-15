@@ -11,7 +11,7 @@ function convertToSlug(Text) {
 }
 
 const CategoryLink = props => (
-  <Link href="/p/[id]" as={`/p/${convertToSlug(props.slug)}`}>
+  <Link href={`/category/${convertToSlug(props.slug)}`}>
     <a className="category-link" />
   </Link>
 );

@@ -1,4 +1,4 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/p/[id].js"],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/index.js"],{
 
 /***/ "./components/Header.js":
 /*!******************************!*\
@@ -263,6 +263,17 @@ function (_Component) {
   return Sidebar;
 }(react__WEBPACK_IMPORTED_MODULE_5__["Component"]);
 /* harmony default export */ __webpack_exports__["default"] = (Sidebar);
+
+/***/ }),
+
+/***/ "./data/categories.json":
+/*!******************************!*\
+  !*** ./data/categories.json ***!
+  \******************************/
+/*! exports provided: 0, default */
+/***/ (function(module) {
+
+module.exports = JSON.parse("[{\"id\":\"1\",\"category\":\"Fruits\",\"items\":[{\"title\":\"Fresh Banana\",\"photo\":\"fruits.jpeg\",\"price\":\"15\"},{\"title\":\"Fresh Avocado\",\"photo\":\"fruits.jpeg\",\"price\":\"17\"},{\"title\":\"Pineapple\",\"photo\":\"fruits.jpeg\",\"price\":\"20\"}]}]");
 
 /***/ }),
 
@@ -6590,21 +6601,21 @@ exports.formatWithValidation = formatWithValidation;
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fp%2F%5Bid%5D&absolutePagePath=%2FUsers%2Folainjohn%2FDesktop%2FPOS%2FnextPOS%2Fpages%2Fp%2F%5Bid%5D.js!./":
-/*!*************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fp%2F%5Bid%5D&absolutePagePath=%2FUsers%2Folainjohn%2FDesktop%2FPOS%2FnextPOS%2Fpages%2Fp%2F%5Bid%5D.js ***!
-  \*************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Folainjohn%2FDesktop%2FPOS%2FnextPOS%2Fpages%2Findex.js!./":
+/*!******************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Folainjohn%2FDesktop%2FPOS%2FnextPOS%2Fpages%2Findex.js ***!
+  \******************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    (window.__NEXT_P=window.__NEXT_P||[]).push(["/p/[id]", function() {
-      var page = __webpack_require__(/*! ./pages/p/[id].js */ "./pages/p/[id].js")
+    (window.__NEXT_P=window.__NEXT_P||[]).push(["/", function() {
+      var page = __webpack_require__(/*! ./pages/index.js */ "./pages/index.js")
       if(true) {
-        module.hot.accept(/*! ./pages/p/[id].js */ "./pages/p/[id].js", function() {
-          if(!next.router.components["/p/[id]"]) return
-          var updatedPage = __webpack_require__(/*! ./pages/p/[id].js */ "./pages/p/[id].js")
-          next.router.update("/p/[id]", updatedPage.default || updatedPage)
+        module.hot.accept(/*! ./pages/index.js */ "./pages/index.js", function() {
+          if(!next.router.components["/"]) return
+          var updatedPage = __webpack_require__(/*! ./pages/index.js */ "./pages/index.js")
+          next.router.update("/", updatedPage.default || updatedPage)
         })
       }
       return { page: page.default || page }
@@ -10907,122 +10918,120 @@ module.exports = function(module) {
 
 /***/ }),
 
-/***/ "./pages/p/[id].js":
-/*!*************************!*\
-  !*** ./pages/p/[id].js ***!
-  \*************************/
+/***/ "./pages/index.js":
+/*!************************!*\
+  !*** ./pages/index.js ***!
+  \************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return categoryItem; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return index; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/router */ "./node_modules/next/dist/client/router.js");
-/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components/Layout */ "./components/Layout.js");
-var _jsxFileName = "/Users/olainjohn/Desktop/POS/nextPOS/pages/p/[id].js";
+/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./index.css */ "./pages/index.css");
+/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_index_css__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _data_categories__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../data/categories */ "./data/categories.json");
+var _data_categories__WEBPACK_IMPORTED_MODULE_4___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../data/categories */ "./data/categories.json", 1);
+var _jsxFileName = "/Users/olainjohn/Desktop/POS/nextPOS/pages/index.js";
+
+// import React, { Component } from "react";
 
 
 
 
-function categoryItem() {
-  var router = Object(next_router__WEBPACK_IMPORTED_MODULE_1__["useRouter"])();
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Layout__WEBPACK_IMPORTED_MODULE_3__["default"], {
+
+function convertToSlug(Text) {
+  return Text.toLowerCase().replace(/ /g, "-").replace(/[^\w-]+/g, "");
+}
+
+var CategoryLink = function CategoryLink(props) {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    href: "/category/".concat(convertToSlug(props.slug)),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 14
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    className: "category-link",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15
+    },
+    __self: this
+  }));
+};
+
+function index() {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Layout__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 21
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
     className: "text-center py-3",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 22
     },
     __self: this
-  }, router.query.slug), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, "Categories"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "categories container",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 11
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "category item",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 12
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    href: "",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 13
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    className: "btn btn-default minus",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 14
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: "/static/img/minus.png",
-    alt: "MinusIcon",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 15
-    },
-    __self: this
-  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    href: "",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 18
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    className: "btn btn-default plus",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 19
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: "/static/img/plus.png",
-    alt: "PlusIcon",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 20
-    },
-    __self: this
-  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: "/static/img/fruits.jpeg",
-    alt: "product image",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 23
     },
     __self: this
-  }))));
+  }, _data_categories__WEBPACK_IMPORTED_MODULE_4__.map(function (item) {
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "category",
+      key: item.id,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 25
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(CategoryLink, {
+      slug: item.category,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 26
+      },
+      __self: this
+    }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+      className: "total-item-per-cat",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 27
+      },
+      __self: this
+    }, item.items.length), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+      className: "category-name",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 28
+      },
+      __self: this
+    }, item.category));
+  })));
 }
 
 /***/ }),
 
-/***/ 0:
-/*!*****************************************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2Fp%2F%5Bid%5D&absolutePagePath=%2FUsers%2Folainjohn%2FDesktop%2FPOS%2FnextPOS%2Fpages%2Fp%2F%5Bid%5D.js ***!
-  \*****************************************************************************************************************************************************/
+/***/ 2:
+/*!**********************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Folainjohn%2FDesktop%2FPOS%2FnextPOS%2Fpages%2Findex.js ***!
+  \**********************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fp%2F%5Bid%5D&absolutePagePath=%2FUsers%2Folainjohn%2FDesktop%2FPOS%2FnextPOS%2Fpages%2Fp%2F%5Bid%5D.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fp%2F%5Bid%5D&absolutePagePath=%2FUsers%2Folainjohn%2FDesktop%2FPOS%2FnextPOS%2Fpages%2Fp%2F%5Bid%5D.js!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Folainjohn%2FDesktop%2FPOS%2FnextPOS%2Fpages%2Findex.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Folainjohn%2FDesktop%2FPOS%2FnextPOS%2Fpages%2Findex.js!./");
 
 
 /***/ }),
@@ -11038,5 +11047,5 @@ module.exports = dll_01f9a3fa864a7b7414d8;
 
 /***/ })
 
-},[[0,"static/runtime/webpack.js","styles"]]]);
-//# sourceMappingURL=[id].js.map
+},[[2,"static/runtime/webpack.js","styles"]]]);
+//# sourceMappingURL=index.js.map
