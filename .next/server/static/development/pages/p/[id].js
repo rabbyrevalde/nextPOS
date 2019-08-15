@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -107,7 +107,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "/Users/olainjohn/Desktop/POS/components/Header.js";
+var _jsxFileName = "/Users/olainjohn/Desktop/POS/nextPOS/components/Header.js";
 
 
 class Header extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
@@ -156,7 +156,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Header */ "./components/Header.js");
 /* harmony import */ var _Sidebar__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Sidebar */ "./components/Sidebar.js");
-var _jsxFileName = "/Users/olainjohn/Desktop/POS/components/Layout.js";
+var _jsxFileName = "/Users/olainjohn/Desktop/POS/nextPOS/components/Layout.js";
 
 
 
@@ -260,7 +260,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _sidebar_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./sidebar.css */ "./components/sidebar.css");
 /* harmony import */ var _sidebar_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_sidebar_css__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "/Users/olainjohn/Desktop/POS/components/Sidebar.js";
+var _jsxFileName = "/Users/olainjohn/Desktop/POS/nextPOS/components/Sidebar.js";
 
 
 class Sidebar extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
@@ -979,7 +979,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components/Layout */ "./components/Layout.js");
-var _jsxFileName = "/Users/olainjohn/Desktop/POS/pages/p/[id].js";
+var _jsxFileName = "/Users/olainjohn/Desktop/POS/nextPOS/pages/p/[id].js";
 
 
 
@@ -1070,14 +1070,14 @@ function categoryItem() {
 
 /***/ }),
 
-/***/ 4:
+/***/ 3:
 /*!*******************************!*\
   !*** multi ./pages/p/[id].js ***!
   \*******************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/olainjohn/Desktop/POS/pages/p/[id].js */"./pages/p/[id].js");
+module.exports = __webpack_require__(/*! /Users/olainjohn/Desktop/POS/nextPOS/pages/p/[id].js */"./pages/p/[id].js");
 
 
 /***/ }),

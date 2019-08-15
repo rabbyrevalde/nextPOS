@@ -24,7 +24,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "/Users/olainjohn/Desktop/POS/components/Header.js";
+var _jsxFileName = "/Users/olainjohn/Desktop/POS/nextPOS/components/Header.js";
 
 
 var Header =
@@ -97,7 +97,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "/Users/olainjohn/Desktop/POS/components/Layout.js";
+var _jsxFileName = "/Users/olainjohn/Desktop/POS/nextPOS/components/Layout.js";
 
 
 
@@ -225,7 +225,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "/Users/olainjohn/Desktop/POS/components/Sidebar.js";
+var _jsxFileName = "/Users/olainjohn/Desktop/POS/nextPOS/components/Sidebar.js";
 
 
 var Sidebar =
@@ -6590,10 +6590,10 @@ exports.formatWithValidation = formatWithValidation;
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fp%2F%5Bid%5D&absolutePagePath=%2FUsers%2Folainjohn%2FDesktop%2FPOS%2Fpages%2Fp%2F%5Bid%5D.js!./":
-/*!***************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fp%2F%5Bid%5D&absolutePagePath=%2FUsers%2Folainjohn%2FDesktop%2FPOS%2Fpages%2Fp%2F%5Bid%5D.js ***!
-  \***************************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fp%2F%5Bid%5D&absolutePagePath=%2FUsers%2Folainjohn%2FDesktop%2FPOS%2FnextPOS%2Fpages%2Fp%2F%5Bid%5D.js!./":
+/*!*************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fp%2F%5Bid%5D&absolutePagePath=%2FUsers%2Folainjohn%2FDesktop%2FPOS%2FnextPOS%2Fpages%2Fp%2F%5Bid%5D.js ***!
+  \*************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10924,7 +10924,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components/Layout */ "./components/Layout.js");
-var _jsxFileName = "/Users/olainjohn/Desktop/POS/pages/p/[id].js";
+var _jsxFileName = "/Users/olainjohn/Desktop/POS/nextPOS/pages/p/[id].js";
 
 
 
@@ -11015,14 +11015,14 @@ function categoryItem() {
 
 /***/ }),
 
-/***/ 3:
-/*!*******************************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2Fp%2F%5Bid%5D&absolutePagePath=%2FUsers%2Folainjohn%2FDesktop%2FPOS%2Fpages%2Fp%2F%5Bid%5D.js ***!
-  \*******************************************************************************************************************************************/
+/***/ 0:
+/*!*****************************************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2Fp%2F%5Bid%5D&absolutePagePath=%2FUsers%2Folainjohn%2FDesktop%2FPOS%2FnextPOS%2Fpages%2Fp%2F%5Bid%5D.js ***!
+  \*****************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fp%2F%5Bid%5D&absolutePagePath=%2FUsers%2Folainjohn%2FDesktop%2FPOS%2Fpages%2Fp%2F%5Bid%5D.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fp%2F%5Bid%5D&absolutePagePath=%2FUsers%2Folainjohn%2FDesktop%2FPOS%2Fpages%2Fp%2F%5Bid%5D.js!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fp%2F%5Bid%5D&absolutePagePath=%2FUsers%2Folainjohn%2FDesktop%2FPOS%2FnextPOS%2Fpages%2Fp%2F%5Bid%5D.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fp%2F%5Bid%5D&absolutePagePath=%2FUsers%2Folainjohn%2FDesktop%2FPOS%2FnextPOS%2Fpages%2Fp%2F%5Bid%5D.js!./");
 
 
 /***/ }),
@@ -11038,5 +11038,5 @@ module.exports = dll_01f9a3fa864a7b7414d8;
 
 /***/ })
 
-},[[3,"static/runtime/webpack.js","styles"]]]);
+},[[0,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=[id].js.map
