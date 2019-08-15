@@ -1,0 +1,81 @@
+#sidebar {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+}
+
+a {
+  text-decoration: none !important;
+}
+.categories {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.categories .category {
+  width: 150px;
+  height: 100%;
+  border: 1px solid lightgray;
+  flex: initial;
+  margin-right: 20px;
+  position: relative;
+  text-align: center;
+  padding: 10px 0;
+  padding-top: 15px;
+  border-radius: 2px;
+}
+.categories .category:last-child {
+  margin-right: 0px;
+}
+.categories .category-link {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+.categories .category .total-item-per-cat {
+  background: #bfe6ff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: #359dff;
+  text-align: center;
+  padding-top: 13px;
+  margin: 0 auto;
+}
+.categories .category .category-name {
+  color: #359dff;
+}
+
+/**Category Item**/
+
+.categories .category a img {
+  width: 30px;
+}
+.categories .category a.plus {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: lightgray;
+  border-radius: 0px;
+}
+.categories .category a.minus {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: lightgray;
+  border-radius: 0px;
+}
+.categories .category img {
+  width: 100%;
+}
+.categories .category.item {
+  height: 150px;
+  overflow: hidden;
+  padding: 0px;
+}
+
+
+/*# sourceMappingURL=styles.chunk.css.map*/

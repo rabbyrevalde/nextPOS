@@ -1,0 +1,23 @@
+[
+  {
+    "id": "1",
+    "category": "Fruits",
+    "items": [
+      {
+        "title": "Fresh Banana",
+        "photo": "fruits.jpeg",
+        "price": "15"
+      },
+      {
+        "title": "Fresh Avocado",
+        "photo": "fruits.jpeg",
+        "price": "17"
+      },
+      {
+        "title": "Pineapple",
+        "photo": "fruits.jpeg",
+        "price": "20"
+      }
+    ]
+  }
+]
